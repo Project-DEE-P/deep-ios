@@ -9,8 +9,10 @@ import Foundation
 
 class APIConstants {
     
-    static let api: String = "http://10.80.162.109:8081"
-//    static let api: String = "http://10.80.162.109:8082"
+    static let api: String = "http://10.80.162.109:8080"
+    
+    // oauth_api
+    static let oauth_api: String = "http://10.80.162.109:8081"
     
     /// auth
     static let auth_register = "\(api)/v1/api/user/login"
