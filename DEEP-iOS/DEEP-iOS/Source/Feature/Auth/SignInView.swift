@@ -11,7 +11,7 @@ import OpenTDS
 struct SignInView: View {
     
     @Environment(\.dismiss) private var dismiss
-    
+
     @State var userId: String = ""
     @State var idRetry: Bool = false
     
@@ -22,13 +22,11 @@ struct SignInView: View {
         NavigationView {
             VStack {
                 TossScrollView("로그인") {
-                    VStack(spacing: 10) {
+                    VStack(spacing: 6) {
                         CustomTextField(text: $userId, retry: $idRetry, placeholder: "아이디")
-                            .padding(.horizontal, 24)
-                        
                         CustomTextField(text: $password, retry: $passwordRetry, placeholder: "비밀번호")
-                            .padding(.horizontal, 24)
                     }
+                    .padding(.horizontal, 24)
                 }
                 .backButton {
                     dismiss()
@@ -48,15 +46,11 @@ struct SignInView: View {
                         .cornerRadius(16)
                 }
                 .padding(.horizontal, 24)
-                .padding(.bottom, 30)
+                .padding(.bottom, 20)
             }
         }
         .navigationBarHidden(true)
     }
-}
-
-#Preview {
-    StartView()
 }
 
 enum TextFieldType {

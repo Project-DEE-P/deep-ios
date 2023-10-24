@@ -24,6 +24,8 @@
 		525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DD92AE76FD4008D75B6 /* Constants.swift */; };
 		525C4DDC2AE7717B008D75B6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DDB2AE7717B008D75B6 /* Response.swift */; };
 		525C4DDE2AE7718B008D75B6 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DDD2AE7718B008D75B6 /* Token.swift */; };
+		525C4DE52AE7B357008D75B6 /* UINavigationController-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DE42AE7B357008D75B6 /* UINavigationController-Ext.swift */; };
+		525C4DE72AE7B452008D75B6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DE62AE7B452008D75B6 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		525C4DD92AE76FD4008D75B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		525C4DDB2AE7717B008D75B6 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		525C4DDD2AE7718B008D75B6 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		525C4DE42AE7B357008D75B6 /* UINavigationController-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController-Ext.swift"; sourceTree = "<group>"; };
+		525C4DE62AE7B452008D75B6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			children = (
 				52264E432AE6BC0F007CE0AD /* View-Ext.swift */,
 				52264E502AE6C87D007CE0AD /* Color-Ext.swift */,
+				525C4DE42AE7B357008D75B6 /* UINavigationController-Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			children = (
 				52264E302AE6BA46007CE0AD /* StartView.swift */,
 				52264E3F2AE6BB35007CE0AD /* SignInView.swift */,
+				525C4DE62AE7B452008D75B6 /* SignUpView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -152,17 +158,9 @@
 		525C4DE02AE78131008D75B6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				525C4DE12AE78150008D75B6 /* Model */,
 				52264E3E2AE6BB05007CE0AD /* Feature */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		525C4DE12AE78150008D75B6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		525C4DE22AE78158008D75B6 /* Main */ = {
@@ -263,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52264E312AE6BA46007CE0AD /* StartView.swift in Sources */,
+				525C4DE72AE7B452008D75B6 /* SignUpView.swift in Sources */,
 				525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */,
 				52264E532AE6C888007CE0AD /* Colors.swift in Sources */,
 				52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */,
@@ -271,6 +270,7 @@
 				52264E492AE6BF08007CE0AD /* MainView.swift in Sources */,
 				52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */,
 				52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */,
+				525C4DE52AE7B357008D75B6 /* UINavigationController-Ext.swift in Sources */,
 				52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */,
 				52264E402AE6BB35007CE0AD /* SignInView.swift in Sources */,
 				525C4DDE2AE7718B008D75B6 /* Token.swift in Sources */,

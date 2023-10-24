@@ -13,53 +13,57 @@ struct StartView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                if isLaunched {
-                    Image("logo")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.white)
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                self.isLaunched = false
-                            }
-                        }
+            VStack {
+                Spacer()
+                Image("logo2")
+                    .resizable()
+                    .frame(width: 140, height: 40)
+                
+                Spacer()
+                
+                NavigationLink(destination: {
+                    SignInView()
+                }) {
+                    Text("로그인")
+                        .setFont(18, .medium)
+                        .foregroundColor(.white)
+                        .frame(height: 49)
+                        .frame(maxWidth: .infinity)
+                        .background(Colors.blue500)
+                        .cornerRadius(16)
                 }
                 
-                VStack {
-                    Spacer()
-                    Image("logo2")
-                        .resizable()
-                        .frame(width: 140, height: 40)
+                HStack(spacing: 8) {
+                    Text("DEEP 유저가 아니라면?")
+                        .setFont(13, .regular)
+                        .foregroundColor(Colors.gray300)
                     
-                    Spacer()
                     NavigationLink(destination: {
-                        SignInView()
+                        SignUpView()
                     }) {
-                        Text("로그인")
-                            .setFont(18, .medium)
-                            .foregroundColor(.white)
-                            .frame(height: 49)
-                            .frame(maxWidth: .infinity)
-                            .background(Colors.blue500)
-                            .cornerRadius(16)
+                        Text("회원가입")
+                            .setFont(16, .medium)
+                            .foregroundColor(Colors.gray600)
                     }
-                    
-                    HStack(spacing: 8) {
-                        Text("DEEP 유저가 아니라면?")
-                            .setFont(13, .regular)
-                            .foregroundColor(Colors.gray300)
-                        
-                        Button {
-                            
-                        } label: {
-                            Text("회원가입")
-                                .setFont(16, .medium)
-                                .foregroundColor(Colors.gray600)
-                        }
-                    }
-                    .padding(.bottom, 6)
                 }
-                .padding(.horizontal, 24)
+                .padding(.vertical, 6)
+            }
+            .padding(.horizontal, 24)
+            .overlay {
+                if isLaunched {
+                    VStack {
+                        Image("logo")
+                            .onAppear {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                    withAnimation(.easeIn) {
+                                        self.isLaunched = false
+                                    }
+                                }
+                            }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.white)
+                }
             }
         }
         .navigationBarHidden(true)
