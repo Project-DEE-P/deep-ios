@@ -20,6 +20,8 @@
 		52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */; };
 		52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E502AE6C87D007CE0AD /* Color-Ext.swift */; };
 		52264E532AE6C888007CE0AD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E522AE6C888007CE0AD /* Colors.swift */; };
+		525C4DD52AE76D09008D75B6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 525C4DD42AE76D09008D75B6 /* Alamofire */; };
+		525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DD92AE76FD4008D75B6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		52264E502AE6C87D007CE0AD /* Color-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Ext.swift"; sourceTree = "<group>"; };
 		52264E522AE6C888007CE0AD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		525C4DD92AE76FD4008D75B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52264E472AE6BEE7007CE0AD /* OpenTDS in Frameworks */,
+				525C4DD52AE76D09008D75B6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +73,8 @@
 		52264E2D2AE6BA46007CE0AD /* DEEP-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				52264E422AE6BBFF007CE0AD /* Extension */,
-				52264E412AE6BBEC007CE0AD /* Utility */,
+				525C4DD72AE76F64008D75B6 /* Resource */,
 				52264E3E2AE6BB05007CE0AD /* Feature */,
-				52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */,
-				52264E322AE6BA48007CE0AD /* Assets.xcassets */,
-				52264E342AE6BA48007CE0AD /* Preview Content */,
 			);
 			path = "DEEP-iOS";
 			sourceTree = "<group>";
@@ -117,6 +117,27 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		525C4DD72AE76F64008D75B6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				525C4DD82AE76FC9008D75B6 /* Network */,
+				52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */,
+				52264E322AE6BA48007CE0AD /* Assets.xcassets */,
+				52264E342AE6BA48007CE0AD /* Preview Content */,
+				52264E422AE6BBFF007CE0AD /* Extension */,
+				52264E412AE6BBEC007CE0AD /* Utility */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		525C4DD82AE76FC9008D75B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				525C4DD92AE76FD4008D75B6 /* Constants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +156,7 @@
 			name = "DEEP-iOS";
 			packageProductDependencies = (
 				52264E462AE6BEE7007CE0AD /* OpenTDS */,
+				525C4DD42AE76D09008D75B6 /* Alamofire */,
 			);
 			productName = "DEEP-iOS";
 			productReference = 52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */;
@@ -166,6 +188,7 @@
 			mainGroup = 52264E222AE6BA46007CE0AD;
 			packageReferences = (
 				52264E452AE6BEE7007CE0AD /* XCRemoteSwiftPackageReference "OpenTDS-SwiftUI" */,
+				525C4DD32AE76D09008D75B6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 52264E2C2AE6BA46007CE0AD /* Products */;
 			projectDirPath = "";
@@ -194,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52264E312AE6BA46007CE0AD /* StartView.swift in Sources */,
+				525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */,
 				52264E532AE6C888007CE0AD /* Colors.swift in Sources */,
 				52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */,
 				52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */,
@@ -422,6 +446,14 @@
 				kind = branch;
 			};
 		};
+		525C4DD32AE76D09008D75B6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -429,6 +461,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52264E452AE6BEE7007CE0AD /* XCRemoteSwiftPackageReference "OpenTDS-SwiftUI" */;
 			productName = OpenTDS;
+		};
+		525C4DD42AE76D09008D75B6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 525C4DD32AE76D09008D75B6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
