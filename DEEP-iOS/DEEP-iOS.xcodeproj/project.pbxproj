@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52264E2F2AE6BA46007CE0AD /* DEEP_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */; };
+		52264E2F2AE6BA46007CE0AD /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E2E2AE6BA46007CE0AD /* Main.swift */; };
 		52264E312AE6BA46007CE0AD /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E302AE6BA46007CE0AD /* StartView.swift */; };
 		52264E332AE6BA48007CE0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52264E322AE6BA48007CE0AD /* Assets.xcassets */; };
 		52264E362AE6BA48007CE0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52264E352AE6BA48007CE0AD /* Preview Assets.xcassets */; };
@@ -22,11 +22,13 @@
 		52264E532AE6C888007CE0AD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E522AE6C888007CE0AD /* Colors.swift */; };
 		525C4DD52AE76D09008D75B6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 525C4DD42AE76D09008D75B6 /* Alamofire */; };
 		525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DD92AE76FD4008D75B6 /* Constants.swift */; };
+		525C4DDC2AE7717B008D75B6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DDB2AE7717B008D75B6 /* Response.swift */; };
+		525C4DDE2AE7718B008D75B6 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C4DDD2AE7718B008D75B6 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DEEP-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEEP_iOSApp.swift; sourceTree = "<group>"; };
+		52264E2E2AE6BA46007CE0AD /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		52264E302AE6BA46007CE0AD /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		52264E322AE6BA48007CE0AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52264E352AE6BA48007CE0AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		52264E502AE6C87D007CE0AD /* Color-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Ext.swift"; sourceTree = "<group>"; };
 		52264E522AE6C888007CE0AD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		525C4DD92AE76FD4008D75B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		525C4DDB2AE7717B008D75B6 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		525C4DDD2AE7718B008D75B6 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				525C4DD72AE76F64008D75B6 /* Resource */,
-				52264E3E2AE6BB05007CE0AD /* Feature */,
+				525C4DE02AE78131008D75B6 /* Source */,
 			);
 			path = "DEEP-iOS";
 			sourceTree = "<group>";
@@ -90,12 +94,8 @@
 		52264E3E2AE6BB05007CE0AD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				52264E302AE6BA46007CE0AD /* StartView.swift */,
-				52264E3F2AE6BB35007CE0AD /* SignInView.swift */,
-				52264E482AE6BF08007CE0AD /* MainView.swift */,
-				52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */,
-				52264E4C2AE6BFDB007CE0AD /* StorageView.swift */,
-				52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */,
+				525C4DE22AE78158008D75B6 /* Main */,
+				525C4DDF2AE7726A008D75B6 /* Auth */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 		525C4DD72AE76F64008D75B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				525C4DD82AE76FC9008D75B6 /* Network */,
-				52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */,
+				52264E2E2AE6BA46007CE0AD /* Main.swift */,
 				52264E322AE6BA48007CE0AD /* Assets.xcassets */,
+				525C4DD82AE76FC9008D75B6 /* Network */,
 				52264E342AE6BA48007CE0AD /* Preview Content */,
 				52264E422AE6BBFF007CE0AD /* Extension */,
 				52264E412AE6BBEC007CE0AD /* Utility */,
@@ -134,8 +134,54 @@
 			isa = PBXGroup;
 			children = (
 				525C4DD92AE76FD4008D75B6 /* Constants.swift */,
+				525C4DDD2AE7718B008D75B6 /* Token.swift */,
+				525C4DDB2AE7717B008D75B6 /* Response.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		525C4DDF2AE7726A008D75B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				52264E302AE6BA46007CE0AD /* StartView.swift */,
+				52264E3F2AE6BB35007CE0AD /* SignInView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		525C4DE02AE78131008D75B6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				525C4DE12AE78150008D75B6 /* Model */,
+				52264E3E2AE6BB05007CE0AD /* Feature */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		525C4DE12AE78150008D75B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		525C4DE22AE78158008D75B6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				52264E482AE6BF08007CE0AD /* MainView.swift */,
+				52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */,
+				52264E4C2AE6BFDB007CE0AD /* StorageView.swift */,
+				525C4DE32AE78163008D75B6 /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		525C4DE32AE78163008D75B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +266,15 @@
 				525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */,
 				52264E532AE6C888007CE0AD /* Colors.swift in Sources */,
 				52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */,
+				525C4DDC2AE7717B008D75B6 /* Response.swift in Sources */,
 				52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */,
 				52264E492AE6BF08007CE0AD /* MainView.swift in Sources */,
 				52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */,
 				52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */,
 				52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */,
 				52264E402AE6BB35007CE0AD /* SignInView.swift in Sources */,
-				52264E2F2AE6BA46007CE0AD /* DEEP_iOSApp.swift in Sources */,
+				525C4DDE2AE7718B008D75B6 /* Token.swift in Sources */,
+				52264E2F2AE6BA46007CE0AD /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = H4CNC953L3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -390,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = H4CNC953L3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -26,17 +26,14 @@ struct StartView: View {
                 }
                 
                 VStack {
-                    
                     Spacer()
-                    
                     Image("logo2")
                         .resizable()
                         .frame(width: 140, height: 40)
                     
                     Spacer()
-                    
                     NavigationLink(destination: {
-                        MainView()
+                        SignInView()
                     }) {
                         Text("로그인")
                             .setFont(18, .medium)
@@ -60,11 +57,12 @@ struct StartView: View {
                                 .foregroundColor(Colors.gray600)
                         }
                     }
-                    .padding(.vertical, 8)
+                    .padding(.bottom, 6)
                 }
-                .padding()
+                .padding(.horizontal, 24)
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
