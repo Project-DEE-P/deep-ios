@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "opentds-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OpenToss/OpenTDS-SwiftUI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d01eb94fc0e787241ed5bb0f1cec32ce0c449af3"
+      }
+    }
+  ],
+  "version" : 2
+}

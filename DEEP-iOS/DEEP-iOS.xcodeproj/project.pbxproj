@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52264E2F2AE6BA46007CE0AD /* DEEP_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */; };
+		52264E312AE6BA46007CE0AD /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E302AE6BA46007CE0AD /* StartView.swift */; };
+		52264E332AE6BA48007CE0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52264E322AE6BA48007CE0AD /* Assets.xcassets */; };
+		52264E362AE6BA48007CE0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52264E352AE6BA48007CE0AD /* Preview Assets.xcassets */; };
+		52264E402AE6BB35007CE0AD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E3F2AE6BB35007CE0AD /* SignInView.swift */; };
+		52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E432AE6BC0F007CE0AD /* View-Ext.swift */; };
+		52264E472AE6BEE7007CE0AD /* OpenTDS in Frameworks */ = {isa = PBXBuildFile; productRef = 52264E462AE6BEE7007CE0AD /* OpenTDS */; };
+		52264E492AE6BF08007CE0AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E482AE6BF08007CE0AD /* MainView.swift */; };
+		52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */; };
+		52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4C2AE6BFDB007CE0AD /* StorageView.swift */; };
+		52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */; };
+		52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E502AE6C87D007CE0AD /* Color-Ext.swift */; };
+		52264E532AE6C888007CE0AD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E522AE6C888007CE0AD /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DEEP-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEEP_iOSApp.swift; sourceTree = "<group>"; };
+		52264E302AE6BA46007CE0AD /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		52264E322AE6BA48007CE0AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52264E352AE6BA48007CE0AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52264E3F2AE6BB35007CE0AD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		52264E432AE6BC0F007CE0AD /* View-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-Ext.swift"; sourceTree = "<group>"; };
+		52264E482AE6BF08007CE0AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBusinessCardView.swift; sourceTree = "<group>"; };
+		52264E4C2AE6BFDB007CE0AD /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		52264E502AE6C87D007CE0AD /* Color-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Ext.swift"; sourceTree = "<group>"; };
+		52264E522AE6C888007CE0AD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52264E282AE6BA46007CE0AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52264E472AE6BEE7007CE0AD /* OpenTDS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52264E222AE6BA46007CE0AD = {
+			isa = PBXGroup;
+			children = (
+				52264E2D2AE6BA46007CE0AD /* DEEP-iOS */,
+				52264E2C2AE6BA46007CE0AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52264E2C2AE6BA46007CE0AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52264E2D2AE6BA46007CE0AD /* DEEP-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				52264E422AE6BBFF007CE0AD /* Extension */,
+				52264E412AE6BBEC007CE0AD /* Utility */,
+				52264E3E2AE6BB05007CE0AD /* Feature */,
+				52264E2E2AE6BA46007CE0AD /* DEEP_iOSApp.swift */,
+				52264E322AE6BA48007CE0AD /* Assets.xcassets */,
+				52264E342AE6BA48007CE0AD /* Preview Content */,
+			);
+			path = "DEEP-iOS";
+			sourceTree = "<group>";
+		};
+		52264E342AE6BA48007CE0AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52264E352AE6BA48007CE0AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52264E3E2AE6BB05007CE0AD /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				52264E302AE6BA46007CE0AD /* StartView.swift */,
+				52264E3F2AE6BB35007CE0AD /* SignInView.swift */,
+				52264E482AE6BF08007CE0AD /* MainView.swift */,
+				52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */,
+				52264E4C2AE6BFDB007CE0AD /* StorageView.swift */,
+				52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		52264E412AE6BBEC007CE0AD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				52264E522AE6C888007CE0AD /* Colors.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		52264E422AE6BBFF007CE0AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52264E432AE6BC0F007CE0AD /* View-Ext.swift */,
+				52264E502AE6C87D007CE0AD /* Color-Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52264E2A2AE6BA46007CE0AD /* DEEP-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52264E392AE6BA48007CE0AD /* Build configuration list for PBXNativeTarget "DEEP-iOS" */;
+			buildPhases = (
+				52264E272AE6BA46007CE0AD /* Sources */,
+				52264E282AE6BA46007CE0AD /* Frameworks */,
+				52264E292AE6BA46007CE0AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DEEP-iOS";
+			packageProductDependencies = (
+				52264E462AE6BEE7007CE0AD /* OpenTDS */,
+			);
+			productName = "DEEP-iOS";
+			productReference = 52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52264E232AE6BA46007CE0AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					52264E2A2AE6BA46007CE0AD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 52264E262AE6BA46007CE0AD /* Build configuration list for PBXProject "DEEP-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52264E222AE6BA46007CE0AD;
+			packageReferences = (
+				52264E452AE6BEE7007CE0AD /* XCRemoteSwiftPackageReference "OpenTDS-SwiftUI" */,
+			);
+			productRefGroup = 52264E2C2AE6BA46007CE0AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52264E2A2AE6BA46007CE0AD /* DEEP-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52264E292AE6BA46007CE0AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52264E362AE6BA48007CE0AD /* Preview Assets.xcassets in Resources */,
+				52264E332AE6BA48007CE0AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52264E272AE6BA46007CE0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52264E312AE6BA46007CE0AD /* StartView.swift in Sources */,
+				52264E532AE6C888007CE0AD /* Colors.swift in Sources */,
+				52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */,
+				52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */,
+				52264E492AE6BF08007CE0AD /* MainView.swift in Sources */,
+				52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */,
+				52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */,
+				52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */,
+				52264E402AE6BB35007CE0AD /* SignInView.swift in Sources */,
+				52264E2F2AE6BA46007CE0AD /* DEEP_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52264E372AE6BA48007CE0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52264E382AE6BA48007CE0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52264E3A2AE6BA48007CE0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H4CNC953L3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DEEP;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.hs.dgsw.DEEP-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52264E3B2AE6BA48007CE0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DEEP-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H4CNC953L3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DEEP;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.hs.dgsw.DEEP-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52264E262AE6BA46007CE0AD /* Build configuration list for PBXProject "DEEP-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52264E372AE6BA48007CE0AD /* Debug */,
+				52264E382AE6BA48007CE0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52264E392AE6BA48007CE0AD /* Build configuration list for PBXNativeTarget "DEEP-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52264E3A2AE6BA48007CE0AD /* Debug */,
+				52264E3B2AE6BA48007CE0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52264E452AE6BEE7007CE0AD /* XCRemoteSwiftPackageReference "OpenTDS-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenToss/OpenTDS-SwiftUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52264E462AE6BEE7007CE0AD /* OpenTDS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52264E452AE6BEE7007CE0AD /* XCRemoteSwiftPackageReference "OpenTDS-SwiftUI" */;
+			productName = OpenTDS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52264E232AE6BA46007CE0AD /* Project object */;
+}
