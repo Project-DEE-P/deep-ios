@@ -14,12 +14,12 @@ struct MainView: View {
         
         NavigationView {
             TossTabView {
-                AddBusinessCardView()
-                    .tossTabItem("명함 추가", Image(systemName: "person.text.rectangle"))
                 StorageView()
                     .tossTabItem("보관함", Image(systemName: "tray"))
+                PurchaseView()
+                        .tossTabItem("구매", Image(systemName: "person.text.rectangle"))
                 ProfileView()
-                    .tossTabItem("수납장", Image(systemName: "person"))
+                    .tossTabItem("프로필", Image(systemName: "person"))
             }
         }
         .navigationBarBackButtonHidden(true)

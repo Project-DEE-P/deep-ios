@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298ADDA62B0F9CB300E61C9A /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298ADDA52B0F9CB300E61C9A /* PurchaseView.swift */; };
 		52264E2F2AE6BA46007CE0AD /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E2E2AE6BA46007CE0AD /* Main.swift */; };
 		52264E312AE6BA46007CE0AD /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E302AE6BA46007CE0AD /* StartView.swift */; };
 		52264E332AE6BA48007CE0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52264E322AE6BA48007CE0AD /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E432AE6BC0F007CE0AD /* View-Ext.swift */; };
 		52264E472AE6BEE7007CE0AD /* OpenTDS in Frameworks */ = {isa = PBXBuildFile; productRef = 52264E462AE6BEE7007CE0AD /* OpenTDS */; };
 		52264E492AE6BF08007CE0AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E482AE6BF08007CE0AD /* MainView.swift */; };
-		52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */; };
 		52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4C2AE6BFDB007CE0AD /* StorageView.swift */; };
 		52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */; };
 		52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E502AE6C87D007CE0AD /* Color-Ext.swift */; };
@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		298ADDA52B0F9CB300E61C9A /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 		52264E2B2AE6BA46007CE0AD /* DEEP-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DEEP-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52264E2E2AE6BA46007CE0AD /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		52264E302AE6BA46007CE0AD /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		52264E3F2AE6BB35007CE0AD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		52264E432AE6BC0F007CE0AD /* View-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-Ext.swift"; sourceTree = "<group>"; };
 		52264E482AE6BF08007CE0AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBusinessCardView.swift; sourceTree = "<group>"; };
 		52264E4C2AE6BFDB007CE0AD /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		52264E4E2AE6BFEC007CE0AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		52264E502AE6C87D007CE0AD /* Color-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Ext.swift"; sourceTree = "<group>"; };
@@ -62,6 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298ADDA72B0F9CCF00E61C9A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				52264E4C2AE6BFDB007CE0AD /* StorageView.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		298ADDA82B0F9CF000E61C9A /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				298ADDA52B0F9CB300E61C9A /* PurchaseView.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
 		52264E222AE6BA46007CE0AD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				525C4DE22AE78158008D75B6 /* Main */,
+				298ADDA72B0F9CCF00E61C9A /* Storage */,
+				298ADDA82B0F9CF000E61C9A /* Purchase */,
+				525C4DE32AE78163008D75B6 /* Profile */,
 				525C4DDF2AE7726A008D75B6 /* Auth */,
 			);
 			path = Feature;
@@ -167,9 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				52264E482AE6BF08007CE0AD /* MainView.swift */,
-				52264E4A2AE6BF9E007CE0AD /* AddBusinessCardView.swift */,
-				52264E4C2AE6BFDB007CE0AD /* StorageView.swift */,
-				525C4DE32AE78163008D75B6 /* Profile */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -263,12 +279,12 @@
 				52264E312AE6BA46007CE0AD /* StartView.swift in Sources */,
 				525C4DE72AE7B452008D75B6 /* SignUpView.swift in Sources */,
 				525C4DDA2AE76FD4008D75B6 /* Constants.swift in Sources */,
+				298ADDA62B0F9CB300E61C9A /* PurchaseView.swift in Sources */,
 				52264E532AE6C888007CE0AD /* Colors.swift in Sources */,
 				52264E512AE6C87D007CE0AD /* Color-Ext.swift in Sources */,
 				525C4DDC2AE7717B008D75B6 /* Response.swift in Sources */,
 				52264E4F2AE6BFEC007CE0AD /* ProfileView.swift in Sources */,
 				52264E492AE6BF08007CE0AD /* MainView.swift in Sources */,
-				52264E4B2AE6BF9E007CE0AD /* AddBusinessCardView.swift in Sources */,
 				52264E4D2AE6BFDB007CE0AD /* StorageView.swift in Sources */,
 				525C4DE52AE7B357008D75B6 /* UINavigationController-Ext.swift in Sources */,
 				52264E442AE6BC0F007CE0AD /* View-Ext.swift in Sources */,

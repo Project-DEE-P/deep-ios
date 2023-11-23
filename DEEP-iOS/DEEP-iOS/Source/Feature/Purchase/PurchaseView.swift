@@ -1,19 +1,19 @@
 //
-//  StorageView.swift
+//  PurchaseView.swift
 //  DEEP-iOS
 //
-//  Created by 이민규 on 10/23/23.
+//  Created by 조승완 on 2023/11/23.
 //
 
 import SwiftUI
 import OpenTDS
 
-struct StorageView: View {
+struct PurchaseView: View {
     
     var body: some View {
         
         NavigationView {
-            
+            Text("PurchaseView")
         }
     }
 }
